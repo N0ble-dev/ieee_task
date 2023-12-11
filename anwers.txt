@@ -1,0 +1,22 @@
+console.log("a");
+const prom = new Promise((resolve) =>
+{
+    console.log("b");
+    resolve("c")
+});
+setTimeout(() =>
+{
+    console.log("d")
+});
+prom.then((res) =>
+{
+    console.log(res)
+});
+console.log("e");
+
+output will be => a  then b then e then c then d
+
+the stack will execute a first then he will find promise then he will act sync 
+he will wait first to resolve the promise first when he create promise he will execute b
+and after that he look there is something else in stack before solve promise he will execute e
+then he will see the resolved value of the promise so he will print c after sync complete he will execute d
