@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="w-[500px] my-5 mx-auto">
+        <div class="bg-slate-300 rounded-lg p-5 flex items-center">
+            <input type="text" placeholder="Enter name of Task" class="p-3 flex-1 border-slate-200 rounded-lg focus:outline-none" />
+
+            <button id="add-task" type="submit" class=" bg-green-50 p-3 rounded-lg ml-4">Add Task</button>
+        </div>
+        <div id="tasks" class="mt-8"></div>
+    </section>
+    <script src="./js/AddTask.js"></script>
+    <script src="./js/HandleRemove.js"></script>
+    <script src="./js/HandleDone.js"></script>
+</body>
+
+</html>
